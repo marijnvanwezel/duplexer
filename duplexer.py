@@ -25,9 +25,8 @@ def main():
 
     (first, second) = duplex(readers)
 
-    filename_combined = ':'.join([os.path.splitext(filename)[0] for filename in filenames])
-    filename_first = f'print first, {filename_combined}.pdf'
-    filename_second = f'print second, {filename_combined}.pdf'
+    filename_first = f'first.pdf'
+    filename_second = f'second.pdf'
 
     with open(filename_first, 'wb') as file:
         first.write(file)

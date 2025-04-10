@@ -20,7 +20,7 @@ To use the utility, follow the steps below:
    ```commandline 
    python3 duplexer.py my_pdf1.pdf my_pdf2.pdf my_pdf3.pdf
    ```
-2. Print the outputted PDF prefixed with `print first`.
+2. Print the PDF `first.pdf`.
 3. Go to your printer, reinsert (and possibly flip) the pages it just printed.
-4. Print the outputted PDF prefixed with `print second`.
+4. Print the PDF `second.pdf`.
 5. Done!

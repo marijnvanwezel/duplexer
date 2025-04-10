@@ -1,15 +1,30 @@
-# Duplexer
+# duplexer
 
 Super simple Python utility to manually prepare PDF files for duplex printing.
 
 ## Prerequisites
 
-To use the utility, make sure you have Python 3 and `pypdf` installed.
+The following software should be installed on your system:
 
-1. To install Python, follow [these instructions](https://wiki.python.org/moin/BeginnersGuide/Download).
-2. To install `pypdf`, type:
+- [Python 3](https://www.python.org/)
+- [pypdf](https://pypdf.readthedocs.io/en/stable/)
+
+## Installation
+
+Follow the steps below to install `duplexer`:
+
+1. Clone this repository and navigate to it:
    ```commandline
-   pip install pypdf
+   git clone https://github.com/marijnvanwezel/duplexer.git
+   cd duplexer
+   ```
+2. Make the Python script executable:
+   ```commandline
+   chmod +x duplexer.py
+   ```
+3. Move the script into `/usr/local/bin`:
+   ```commandline
+   mv duplexer.py /usr/local/bin/duplexer
    ```
 
 ## Usage
@@ -18,9 +33,10 @@ To use the utility, follow the steps below:
 
 1. Invoke the utility with one or more filenames, like so:
    ```commandline 
-   python3 duplexer.py my_pdf1.pdf my_pdf2.pdf my_pdf3.pdf
+   duplexer my_pdf1.pdf my_pdf2.pdf my_pdf3.pdf
    ```
-2. Print the PDF `first.pdf`.
-3. Go to your printer, reinsert (and possibly flip) the pages it just printed.
-4. Print the PDF `second.pdf`.
-5. Done!
+2. Print the PDF `first.pdf`;
+3. Go to your printer;
+4. Reinsert the pages, and (depending on the model of your printer), flip the pages;
+5. Go back to your computer;
+6. Print the PDF `second.pdf`.

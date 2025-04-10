@@ -21,6 +21,7 @@ def main():
             readers.append(PdfReader(filename))
         except PdfReadError:
             print(f'duplexer: unable to read "{filename}" as pdf.')
+            sys.exit(1)
 
     (first, second) = duplex(readers)
 

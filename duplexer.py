@@ -9,6 +9,7 @@ def main():
 
     if len(filenames) == 0:
         print('duplexer: no files specified')
+        sys.exit(1)
 
     readers = []
 

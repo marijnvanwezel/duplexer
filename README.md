@@ -1,6 +1,6 @@
 # duplexer
 
-Super simple Python utility to manually prepare PDF files for duplex printing.
+Super simple Python utility to prepare PDF files for duplex printing.
 
 ## Prerequisites
 
